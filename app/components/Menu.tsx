@@ -5,6 +5,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
 import Link from "next/link";
@@ -19,20 +20,29 @@ export const Menu = () => {
             <NavigationMenuItem key={item.href}>
               {item.submenu ? (
                 <>
-                  <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
+                  <div className="flex items-center">
+                    <Link
+                      href={item.href}
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      {item.label}
+                    </Link>
+
+                    <NavigationMenuTrigger className="ml-[-8px] px-1">
+                      <span className="sr-only">Abrir submenu</span>
+                    </NavigationMenuTrigger>
+                  </div>
 
                   <NavigationMenuContent>
                     <ul className="grid w-[250px] gap-2 p-4">
                       {item.submenu.map((subItem) => (
                         <li key={subItem.href}>
-                          <NavigationMenuLink asChild>
-                            <Link
-                              href={subItem.href}
-                              className="block rounded-md p-2 hover:bg-muted focus:bg-muted"
-                            >
-                              {subItem.label}
-                            </Link>
-                          </NavigationMenuLink>
+                          <Link
+                            href={subItem.href}
+                            className="block rounded-md p-2 hover:bg-muted"
+                          >
+                            {subItem.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>

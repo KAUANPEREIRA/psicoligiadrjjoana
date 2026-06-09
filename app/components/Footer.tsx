@@ -3,7 +3,9 @@ import Link from "next/link";
 import { contactInfo, socialLinks } from "../data/geral";
 import { FooterMenu } from "./FooterMenu";
 import { MessageCircle } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { WhatsAppButton } from "./WhatsAppButton";
+import { FiClock, FiMail, FiMapPin } from "react-icons/fi";
 
 export const Footer = () => {
   return (
@@ -17,7 +19,7 @@ export const Footer = () => {
               title="Página inicial"
             >
               <Image
-                className="mb-4"
+                className="mb-4 filter brightness-0 invert opacity-90"
                 src="/imagens/logo-dra-joana-darc-psicologa-clinica.webp"
                 alt="DRA. JOANA Darc - Psicóloga Clínica"
                 width={155}
@@ -73,21 +75,29 @@ export const Footer = () => {
                 </Link>
               </li>
 
-              <li>
-                <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="transition hover:text-gray-300"
-                >
-                  {contactInfo.email}
-                </a>
-              </li>
+              <Link
+                href={`mailto:${contactInfo.email}`}
+                className="flex items-center gap-2 transition hover:text-gray-300 opacity-80 hover:opacity-100"
+              >
+                <FiMail className="h-4 w-4 text-gray-400 transition group-hover:text-blue-500" />
+                {contactInfo.email}
+              </Link>
             </ul>
 
             <h3 className="mb-4 text-lg font-normal mt-5">
               Horário de atendimento:
             </h3>
-            <p className="text-gray-300 text-sm">Segunda a sexta: 7h às 19h</p>
-            <p className="text-gray-300 text-sm">Sábados: 8h às 12h</p>
+            <div className="space-y-2">
+              <p className="flex items-center gap-2 text-gray-300 text-sm">
+                <FiClock className="h-4 w-4 text-gray-400" />
+                Segunda a sexta: 7h às 19h
+              </p>
+
+              <p className="flex items-center gap-2 text-gray-300 text-sm">
+                <FiClock className="h-4 w-4 text-gray-400" />
+                Sábados: 8h às 12h
+              </p>
+            </div>
           </div>
 
           {/* COLUNA 4 */}
@@ -95,7 +105,11 @@ export const Footer = () => {
             <h3 className="mb-4 text-lg font-normal">Localização</h3>
 
             <address className="not-italic text-sm text-gray-300 space-y-1 mb-4">
-              <p className="text-white font-medium">{contactInfo.endereco}</p>
+              <div className="flex items-start gap-3">
+                <FiMapPin className="h-4 w-4 text-gray-400 mt-1 shrink-0" />
+
+                <p className="text-white font-medium">{contactInfo.endereco}</p>
+              </div>
 
               <p>
                 {contactInfo.bairro}, {contactInfo.cidade}/{contactInfo.uf}
@@ -123,6 +137,8 @@ export const Footer = () => {
           direitos reservados.
         </div>
       </div>
+
+      <WhatsAppButton />
     </footer>
   );
 };

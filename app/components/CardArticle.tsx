@@ -28,6 +28,7 @@ export const CardArticle = ({
         hover:-translate-y-1
         hover:shadow-xl
         flex-1
+        h-[100%]
       "
     >
       <div className="relative w-full h-[180px]">

@@ -5,12 +5,12 @@ export function ServicesHome() {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
-        <div className="mb-14 text-center flex flex-col items-center justify-center column">
+        <div className="mb-14 text-center flex flex-col items-center justify-center">
           <span className="mb-2 block font-sans text-sm font-medium uppercase tracking-[0.12em] leading-[1.4] text-[#8fa998]">
             Especialidades
           </span>
 
-          <h2 className="text-[2rem] leading-[48px] font-medium text-[#2d3142] font-cormorant">
+          <h2 className="text-5xl leading-[48px] font-medium text-[#2d3142] font-[family-name:var(--font-cormorant)]">
             Serviços de Terapia ABA
           </h2>
           <p>

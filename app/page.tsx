@@ -8,6 +8,13 @@ import { Diferentials } from "./components/Diferentials";
 import { BlogHome } from "./components/BlogHome";
 import { TestimonialHome } from "./components/TestimonialHome";
 import { ContactForm } from "./components/ContactForm";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Agência XYZ | Criação de Sites e SEO",
+  description:
+    "Desenvolvimento de sites profissionais, SEO e otimização para empresas que desejam gerar mais clientes.",
+};
 
 export default function Home() {
   return (

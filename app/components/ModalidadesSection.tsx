@@ -12,7 +12,7 @@ export default function ModalidadesSection() {
 
           <h2
             id="modalidades-aba"
-            className="text-3xl font-light tracking-tight text-[#1f1f1f] md:text-4xl"
+            className="text-5xl font-light tracking-tight text-[#1f1f1f] font-[family-name:var(--font-cormorant)]"
           >
             Como Funciona a Terapia ABA
           </h2>
@@ -29,7 +29,7 @@ export default function ModalidadesSection() {
 
             return (
               <article
-                key={index}
+                key={item.title}
                 className="
                   group rounded-3xl border border-[#ecece7]
                   bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.05)]
@@ -38,7 +38,6 @@ export default function ModalidadesSection() {
                   hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)]
                 "
               >
-                {/* ICON */}
                 <div
                   className="
                     mb-6 flex h-12 w-12 items-center justify-center

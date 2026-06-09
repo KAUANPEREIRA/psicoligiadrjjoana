@@ -12,54 +12,45 @@ export const services: ServiceProps[] = [
   {
     id: 1,
     icon: Brain,
-    title: "Terapia ABA para Autismo",
+    title: "Atendimento ao Desenvolvimento Infantil",
     description:
-      "Intervenção comportamental intensiva para crianças com TEA, focada no desenvolvimento de habilidades essenciais e redução de comportamentos desafiadores.",
-    slug: "/terapia-aba-para-autismo",
+      "Acompanhamento psicológico voltado ao desenvolvimento infantil, considerando aspectos comportamentais, cognitivos e emocionais.",
+    slug: "/desenvolvimento-infantil",
   },
 
   {
     id: 2,
-    icon: Users,
-    title: "Desenvolvimento de Habilidades Sociais",
+    icon: ChartColumn,
+    title: "Intervenção Baseada em Evidências (ABA)",
     description:
-      "Ensino estruturado de competências sociais, interação com pares, comunicação funcional e comportamento adequado em contextos sociais.",
-    slug: "/habilidades-sociais",
+      "Intervenções fundamentadas na Análise do Comportamento Aplicada (ABA), com foco em desenvolvimento de habilidades e melhora comportamental.",
+    slug: "/intervencao-aba",
   },
 
   {
     id: 3,
-    icon: Sprout,
-    title: "Intervenção Precoce",
+    icon: Users,
+    title: "Trabalho Integrado com Família e Escola",
     description:
-      "Terapia ABA para crianças pequenas (2–5 anos) com diagnóstico ou suspeita de autismo, maximizando o potencial de desenvolvimento.",
-    slug: "/intervencao-precoce",
+      "Atuação conjunta com familiares e ambiente escolar para garantir continuidade e eficácia no processo de desenvolvimento infantil.",
+    slug: "/familia-e-escola",
   },
 
   {
     id: 4,
-    icon: HandHelping,
-    title: "Treinamento de Pais",
+    icon: Sprout,
+    title: "Estimulação Cognitiva Infantil",
     description:
-      "Capacitação de familiares em técnicas ABA para aplicação no cotidiano, promovendo consistência e generalização de habilidades.",
-    slug: "/treinamento-de-pais",
+      "Atividades e estratégias para desenvolvimento de funções cognitivas, atenção, aprendizagem e habilidades mentais.",
+    slug: "/estimulacao-cognitiva",
   },
 
   {
     id: 5,
-    icon: ChartColumn,
-    title: "Análise Funcional do Comportamento",
-    description:
-      "Avaliação detalhada para identificar funções de comportamentos desafiadores e desenvolver planos de intervenção eficazes.",
-    slug: "/analise-funcional-do-comportamento",
-  },
-
-  {
-    id: 6,
     icon: GraduationCap,
-    title: "Consultoria Escolar ABA",
+    title: "Reabilitação Cognitiva Infantil",
     description:
-      "Orientação e supervisão para escolas implementarem estratégias ABA, garantindo inclusão e aprendizado efetivo.",
-    slug: "/consultoria-escolar-aba",
+      "Intervenção focada na recuperação e fortalecimento de habilidades cognitivas em crianças com dificuldades no desenvolvimento.",
+    slug: "/reabilitacao-cognitiva",
   },
 ];
