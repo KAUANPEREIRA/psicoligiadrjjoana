@@ -12,12 +12,8 @@ export const menuItems = [
     href: "/servicos",
     submenu: [
       {
-        label: "Terapia Individual",
-        href: "/servicos/terapia-individual",
-      },
-      {
-        label: "Terapia de Casal",
-        href: "/servicos/terapia-casal",
+        label: "Desenvolvimento Infantil",
+        href: "/desenvolvimento-infantil",
       },
     ],
   },
