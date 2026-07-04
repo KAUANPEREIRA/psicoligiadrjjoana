@@ -16,7 +16,7 @@ export const CardArticle = ({
   return (
     <article
       className="
-        max-w-[280px]
+        
         bg-[#f8f6f3]
         rounded-[24px]
         overflow-hidden

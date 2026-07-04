@@ -21,7 +21,7 @@ export const BlogHome = () => {
           </p>
         </div>
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 place-items-center md:place-items-start">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 place-items-center md:place-items-start">
           <li>
             <CardArticle
               image="/blog/blog-01.webp"
@@ -40,6 +40,14 @@ export const BlogHome = () => {
             />
           </li>
 
+          <li>
+            <CardArticle
+              image="/blog/blog-03.webp"
+              date="08 de abril, 2025"
+              title="Como a família pode ajudar no tratamento ABA"
+              description="Estratégias práticas para pais e cuidadores no dia a dia."
+            />
+          </li>
           <li>
             <CardArticle
               image="/blog/blog-03.webp"

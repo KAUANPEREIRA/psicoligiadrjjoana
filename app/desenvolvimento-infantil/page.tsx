@@ -161,8 +161,8 @@ export default function DesenvolvimentoInfantil() {
       </section>
 
       <Faq
-        heading="Dúvidas sobre Plano Empresarial"
-        description="Tudo o que sua empresa precisa saber antes de contratar."
+        heading="Perguntas Frequentes"
+        description="Encontre respostas para as dúvidas mais comuns sobre nossos serviços, pagamentos, suporte e utilização da plataforma."
         items={faqItems}
       />
 
