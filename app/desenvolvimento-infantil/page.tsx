@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { ServiceHero } from "../components/ServiceHero";
 import { CardsDesenvolvimentoInfantil } from "../components/CardsDesenvolvimentoInfantil";
 import { CardsBeneficiosDesenvolvimento } from "../CardsBeneficiosDesenvolvimento";
+import { Faq } from "../components/Faq";
+import { FaqItem } from "../data/FaqItem";
 
 export const metadata: Metadata = {
   title: "Dra. Joana D'Arc | Psicóloga Especialista em ABA",
@@ -12,6 +14,45 @@ export const metadata: Metadata = {
 };
 
 export default function DesenvolvimentoInfantil() {
+  const faqItems: FaqItem[] = [
+    {
+      id: "o-que-e-desenvolvimento-infantil",
+      question: "O que é desenvolvimento infantil?",
+      answer:
+        "Desenvolvimento infantil refere-se ao crescimento físico, cognitivo, emocional e social da criança desde o nascimento até a adolescência. Envolve aquisição de habilidades motoras, linguagem, interação social e capacidade de aprendizagem.",
+    },
+    {
+      id: "quando-procurar-especialista",
+      question:
+        "Quando devo procurar um especialista em desenvolvimento infantil?",
+      answer:
+        "Recomenda-se procurar um especialista se você notar atrasos na fala, dificuldades motoras, problemas de comportamento, dificuldades de aprendizagem ou qualquer preocupação com o desenvolvimento. A intervenção precoce é fundamental.",
+    },
+    {
+      id: "como-funciona-acompanhamento",
+      question: "Como funciona o acompanhamento de desenvolvimento infantil?",
+      answer:
+        "O acompanhamento envolve avaliação inicial completa, estabelecimento de objetivos personalizados, sessões terapêuticas regulares e orientação aos pais. O trabalho é integrado abordando aspectos cognitivos, motores, emocionais e sociais.",
+    },
+    {
+      id: "importancia-intervencao-precoce",
+      question: "Qual a importância da intervenção precoce?",
+      answer:
+        "A intervenção precoce aproveita a neuroplasticidade do cérebro infantil, reduzindo significativamente dificuldades futuras. Crianças que recebem intervenção precoce têm melhor desempenho escolar e maior independência.",
+    },
+    {
+      id: "quanto-tempo-resultados",
+      question: "Quanto tempo leva para ver resultados?",
+      answer:
+        "Os resultados variam conforme a criança e o tipo de atraso. Geralmente, observam-se primeiros progressos entre 4-8 semanas. Maior transformação ocorre em 3-6 meses de acompanhamento consistente.",
+    },
+    {
+      id: "acompanhamento-online",
+      question: "Posso fazer acompanhamento online?",
+      answer:
+        "Sim, oferecemos acompanhamento online para algumas modalidades. No entanto, avaliações iniciais e trabalho com coordenação motora grossa geralmente requerem presencialidade.",
+    },
+  ];
   return (
     <>
       <Header />
@@ -116,6 +157,12 @@ export default function DesenvolvimentoInfantil() {
         </div>
         <CardsBeneficiosDesenvolvimento />
       </section>
+
+      <Faq
+        heading="Dúvidas sobre Plano Empresarial"
+        description="Tudo o que sua empresa precisa saber antes de contratar."
+        items={faqItems}
+      />
 
       <Footer />
     </>
