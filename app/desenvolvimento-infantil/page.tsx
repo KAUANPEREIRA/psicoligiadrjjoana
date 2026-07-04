@@ -8,9 +8,11 @@ import { Faq } from "../components/Faq";
 import { FaqItem } from "../data/FaqItem";
 
 export const metadata: Metadata = {
-  title: "Dra. Joana D'Arc | Psicóloga Especialista em ABA",
+  title: "Desenvolvimento Infantil em São Paulo | Psicóloga Especializada",
   description:
-    "Conheça a Dra. Joana D'Arc, psicóloga CRP 06/145789 especializada em Análise do Comportamento Aplicada (ABA) e desenvolvimento infantil no TEA. Formação em Neuropsicologia.",
+    "Acompanhamento especializado de desenvolvimento infantil. Avaliação profissional dos aspectos cognitivos, motores, sociais e de linguagem. Intervenção precoce com a Dra. Joana.",
+  keywords:
+    "desenvolvimento infantil, psicóloga infantil, avaliação desenvolvimento, intervenção precoce, psicóloga São Paulo",
 };
 
 export default function DesenvolvimentoInfantil() {

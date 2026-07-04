@@ -15,6 +15,10 @@ export const menuItems = [
         label: "Desenvolvimento Infantil",
         href: "/desenvolvimento-infantil",
       },
+      {
+        label: "Intervenção ABA",
+        href: "/intervencao-aba",
+      },
     ],
   },
   {

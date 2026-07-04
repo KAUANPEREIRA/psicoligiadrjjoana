@@ -13,7 +13,7 @@ export const TestimonialHome = () => {
         </h2>
       </div>
       <div className="container mx-auto">
-        <div className="flex gap-5 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 place-items-center md:place-items-start">
           <CardTestimonial
             description="
     A Joana transformou a vida do nosso filho! Com a Terapia ABA,

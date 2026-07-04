@@ -21,7 +21,7 @@ export const BlogHome = () => {
           </p>
         </div>
 
-        <ul className="flex gap-10 justify-center">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 place-items-center md:place-items-start">
           <li>
             <CardArticle
               image="/blog/blog-01.webp"
