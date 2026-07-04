@@ -1,28 +1,35 @@
-import { GraduationCap, BadgeCheck, BookOpen, Users } from "lucide-react";
+import {
+  GraduationCap,
+  BadgeCheck,
+  BookOpen,
+  Users,
+  Brain,
+} from "lucide-react";
 
 const formations = [
   {
     icon: GraduationCap,
-    title: "Graduação em Psicologia",
-    institution: "Universidade de São Paulo (USP) - 2008",
+    title: "Especialização em Neuropsicologia",
+    institution: "Formação com foco em Reabilitação Cognitiva Infantil",
   },
   {
-    icon: BadgeCheck,
-    title: "Especialização em TCC",
-    institution: "Instituto de Terapia Cognitiva - 2010",
+    icon: Brain,
+    title: "Neurodesenvolvimento Infantil",
+    institution:
+      "Atuação voltada ao desenvolvimento cognitivo e comportamental",
   },
   {
     icon: BookOpen,
-    title: "Mestrado em Psicologia Clínica",
-    institution: "PUC-SP - 2013",
+    title: "Intervenção Baseada em Evidências",
+    institution:
+      "Estratégias fundamentadas em práticas cientificamente validadas",
   },
   {
     icon: Users,
-    title: "Formação em Terapia de Casal",
-    institution: "Instituto Familiae - 2015",
+    title: "Orientação Familiar e Escolar",
+    institution: "Trabalho integrado entre criança, família e escola",
   },
 ];
-
 export const Formation = () => {
   return (
     <>
@@ -63,7 +70,7 @@ export const Formation = () => {
           </div>
 
           <div className="max-w-lg rounded-3xl border border-gray-200 bg-white px-8 py-12 text-center mx-auto mt-12">
-            <h3 className="text-2xl font-semibold text-[#2d3142]">
+            <h3 className="text-xl font-semibold text-[#2d3142]">
               Registro Profissional
             </h3>
 
@@ -71,7 +78,7 @@ export const Formation = () => {
               Conselho Regional de Psicologia de São Paulo
             </p>
 
-            <p className="mt-4 text-4xl font-bold text-[#2d3142]">
+            <p className="mt-4 text-xl font-bold text-[#2d3142]">
               CRP 06/123456
             </p>
           </div>

@@ -13,7 +13,7 @@ export default function Servicos() {
     <>
       <Header />
 
-      <BreadcrumbComponent />
+      <BreadcrumbComponent title="Serviços" />
 
       <ServicesHome />
 
