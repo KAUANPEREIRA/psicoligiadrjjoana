@@ -12,7 +12,7 @@ export function Hero() {
           src="/imagens/banner-dr-joana.webp"
           alt="Psicóloga especialista em Terapia ABA em São Paulo"
           fill
-          priority
+          fetchPriority="high"
           quality={100}
           className="object-cover object-top"
         />
@@ -62,7 +62,7 @@ export function Hero() {
           src="/imagens/drjoanamobile.webp"
           alt="Psicóloga especialista em Terapia ABA em São Paulo"
           fill
-          priority
+          fetchPriority="high"
           quality={100}
           className="object-cover object-center"
         />

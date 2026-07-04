@@ -9,7 +9,7 @@ export function Logo() {
         alt="DRA. JOANA Darc - Psicóloga Clínica"
         width={155}
         height={22}
-        priority
+        fetchPriority="high"
       />
     </Link>
   );
