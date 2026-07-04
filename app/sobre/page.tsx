@@ -7,6 +7,14 @@ import Link from "next/link";
 import { Formation } from "../components/Formation";
 import Cta from "../components/Cta";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dra. Joana D'Arc | Psicóloga Especialista em ABA",
+  description:
+    "Conheça a Dra. Joana D'Arc, psicóloga CRP 06/145789 especializada em Análise do Comportamento Aplicada (ABA) e desenvolvimento infantil no TEA. Formação em Neuropsicologia.",
+};
+
 export default function Sobre() {
   return (
     <>

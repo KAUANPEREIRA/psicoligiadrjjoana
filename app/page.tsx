@@ -11,9 +11,9 @@ import { ContactForm } from "./components/ContactForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agência XYZ | Criação de Sites e SEO",
+  title: "Terapia ABA em São Paulo | Psicóloga Especializada",
   description:
-    "Desenvolvimento de sites profissionais, SEO e otimização para empresas que desejam gerar mais clientes.",
+    "Psicóloga especializada em Terapia ABA para crianças com autismo em São Paulo. Atendimento presencial e online com abordagem baseada em evidências científicas.",
 };
 
 export default function Home() {
