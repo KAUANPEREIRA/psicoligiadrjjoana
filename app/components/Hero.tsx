@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Cormorant } from "next/font/google";
+
 import Image from "next/image";
 
 export function Hero() {

@@ -122,6 +122,7 @@ export const Footer = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14628.251429379561!2d-46.92582988017185!3d-23.56618584538412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf06e6df4c0d01%3A0x18dbac2194e0a9bb!2sR.%20Rouxinol%2C%20108%20-%20Jardim%20Rosemary%2C%20Cotia%20-%20SP%2C%2006704-640!5e0!3m2!1spt-BR!2sbr!4v1779066065268!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="150"
+                title="Mapa de localização da clínica de Psicologia Dr. Joana"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
