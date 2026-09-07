@@ -21,16 +21,15 @@ export default function Cta() {
         <div className="mx-auto max-w-4xl text-center">
           <h2
             id="cta-title"
-            className="mb-6 text-3xl font-bold leading-tight text-white"
+            className="mb-6 text-3xl font-medium leading-tight text-white font-[var(--font-cormorant)]"
           >
-            Psicóloga em São Paulo para Ansiedade, Autoestima e Bem-Estar
-            Emocional
+            Atendimento infantil individualizado para apoiar o desenvolvimento
+            da criança
           </h2>
 
-          <p className="mx-auto mb-10 max-w-3xl text-xl leading-relaxed text-slate-200">
-            Psicóloga em São Paulo especializada em ansiedade, autoestima e
-            saúde emocional. Agende sua consulta e comece sua jornada de
-            autoconhecimento e bem-estar.
+          <p className="mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-slate-200">
+            Agende um atendimento infantil online e saiba como podemos ajudar no
+            desenvolvimento da sua criança.
           </p>
 
           <Link

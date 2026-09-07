@@ -1,4 +1,4 @@
-import { Check, Home, Building2 } from "lucide-react";
+import { Check, Home, Building2, Monitor } from "lucide-react";
 
 export const modalidades = [
   {
@@ -23,6 +23,18 @@ export const modalidades = [
       "Materiais terapêuticos especializados",
       "Localização central em São Paulo",
       "Sala preparada para intervenção ABA",
+    ],
+  },
+  {
+    icon: Monitor,
+    title: "Atendimento Online",
+    description:
+      "Atendimento realizado de forma online, oferecendo orientação e acompanhamento individualizado para apoiar o desenvolvimento infantil no conforto da família.",
+    benefits: [
+      "Atendimento à distância",
+      "Mais comodidade para a família",
+      "Horários flexíveis e personalizados",
+      "Orientações adaptadas às necessidades da criança",
     ],
   },
 ];

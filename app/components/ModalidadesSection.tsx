@@ -23,7 +23,7 @@ export default function ModalidadesSection() {
           </p>
         </header>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-3">
           {modalidades.map((item, index) => {
             const Icon = item.icon;
 

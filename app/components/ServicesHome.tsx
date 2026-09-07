@@ -11,7 +11,7 @@ export function ServicesHome() {
           </span>
 
           <h2 className="text-5xl leading-[48px] font-medium text-[#2d3142] font-[family-name:var(--font-cormorant)]">
-            Serviços de Terapia ABA
+            Serviços para o desenvolvimento infantil
           </h2>
           <p>
             Intervenção comportamental especializada baseada em evidências
