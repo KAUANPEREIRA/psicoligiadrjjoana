@@ -1,47 +1,12 @@
 import Link from "next/link";
-import { CardArticle, type CardArticleProps } from "./CardArticle";
-
-// href aponta para /blog até existirem as páginas individuais dos artigos
-const articles: CardArticleProps[] = [
-  {
-    image: "/blog/blog-01.webp",
-    imageAlt: "Criança em sessão de Terapia ABA com a psicóloga",
-    dateTime: "2025-04-12",
-    date: "12 de abril, 2025",
-    category: "Terapia ABA",
-    readingTime: "6 min de leitura",
-    title: "O que é Terapia ABA e como funciona no tratamento do autismo",
-    description:
-      "Entenda os princípios da Análise do Comportamento Aplicada e seus benefícios comprovados para crianças com TEA.",
-    href: "/blog",
-  },
-  {
-    image: "/blog/blog-02.webp",
-    imageAlt: "Criança brincando, ilustrando sinais precoces do autismo",
-    dateTime: "2025-04-10",
-    date: "10 de abril, 2025",
-    category: "Autismo",
-    readingTime: "5 min de leitura",
-    title: "Sinais precoces do autismo em crianças",
-    description:
-      "Como identificar sinais iniciais e quando buscar avaliação especializada.",
-    href: "/blog",
-  },
-  {
-    image: "/blog/blog-03.webp",
-    imageAlt: "Família participando do acompanhamento terapêutico da criança",
-    dateTime: "2025-04-08",
-    date: "08 de abril, 2025",
-    category: "Orientação a pais",
-    readingTime: "4 min de leitura",
-    title: "Como a família pode ajudar no tratamento ABA",
-    description:
-      "Estratégias práticas para pais e cuidadores no dia a dia.",
-    href: "/blog",
-  },
-];
+import { blogHome, blogPosts, isoFromDataPublicacao } from "@/app/data/blog";
+import { CardArticle } from "./CardArticle";
 
 export const BlogHome = () => {
+  // Os artigos vêm de app/data/blog.ts: os mais recentes ficam no início do array
+  const posts = blogPosts.slice(0, blogHome.count);
+  if (posts.length === 0) return null;
+
   return (
     <section aria-labelledby="blog-title" className="px-4">
       <div className="container mx-auto py-16 md:py-24">
@@ -63,12 +28,22 @@ export const BlogHome = () => {
         </div>
 
         <ul className="grid grid-cols-12 gap-6 md:gap-8">
-          {articles.map((article) => (
+          {posts.map((post) => (
             <li
-              key={article.title}
+              key={post.slug}
               className="col-span-12 md:col-span-6 lg:col-span-4"
             >
-              <CardArticle {...article} />
+              <CardArticle
+                href={`/blog/${post.slug}`}
+                title={post.titulo}
+                description={post.resumo}
+                category={post.categoria}
+                date={post.dataPublicacao}
+                dateTime={isoFromDataPublicacao(post.dataPublicacao)}
+                readingTime={`${post.tempoLeitura} de leitura`}
+                image={post.imagemUrl}
+                imageAlt={post.imagemAlt}
+              />
             </li>
           ))}
         </ul>

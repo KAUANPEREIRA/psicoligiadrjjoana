@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Cormorant } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { baseOpenGraph } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
 import { LocalBusinessSchema } from "./components/LocalBusinessSchema";
 
@@ -25,17 +26,7 @@ export const metadata: Metadata = {
     "Psicóloga especializada em Terapia ABA para crianças com autismo em São Paulo. Atendimento presencial e online com abordagem baseada em evidências científicas.",
   alternates: { canonical: "./" },
   robots: { index: true, follow: true },
-  openGraph: {
-    type: "website",
-    locale: "pt_BR",
-    siteName: "Dra. Joana D'Arc | Terapia ABA",
-    images: [
-      {
-        url: "/imagens/banner-dr-joana.webp",
-        alt: "Dra. Joana D'Arc, psicóloga especialista em Terapia ABA em São Paulo",
-      },
-    ],
-  },
+  openGraph: baseOpenGraph,
   twitter: { card: "summary_large_image" },
 };
 

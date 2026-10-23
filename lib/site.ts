@@ -7,6 +7,8 @@ export const siteUrl = (
 
 export const siteName = "Dra. Joana D'Arc | Psicóloga ABA";
 
+export const absoluteUrl = (path: string) => `${siteUrl}${path}`;
+
 export const whatsappDigits = `55${contactInfo.whatsapp.replace(/\D/g, "")}`;
 
 export const whatsappUrl = (text?: string) =>
@@ -17,6 +19,7 @@ export const indexablePaths = [
   "/",
   "/sobre",
   "/servicos",
+  "/blog",
   "/desenvolvimento-infantil",
   "/intervencao-aba",
   "/familia-e-escola",

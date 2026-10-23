@@ -5,8 +5,8 @@ import { ArrowRight, Clock } from "lucide-react";
 export interface CardArticleProps {
   image: string;
   imageAlt: string;
-  /** Data ISO (YYYY-MM-DD) usada no atributo datetime */
-  dateTime: string;
+  /** Data ISO (YYYY-MM-DD) usada no atributo datetime; sem ela, só o texto */
+  dateTime?: string;
   date: string;
   category: string;
   readingTime: string;
@@ -43,7 +43,7 @@ export const CardArticle = ({
 
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-center gap-3 text-xs text-neutral-500">
-          <time dateTime={dateTime}>{date}</time>
+          {dateTime ? <time dateTime={dateTime}>{date}</time> : date}
           <span aria-hidden="true">•</span>
           <span className="inline-flex items-center gap-1">
             <Clock className="h-3.5 w-3.5" aria-hidden="true" />
