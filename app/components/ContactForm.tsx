@@ -15,6 +15,13 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
+// TODO: ponto único de integração do envio (API, e-mail, CRM...).
+// Deve resolver em caso de sucesso e lançar erro em caso de falha.
+// Hoje é um stub: NÃO envia os dados a lugar nenhum.
+async function submitLead(data: ContactFormData): Promise<void> {
+  void data;
+}
+
 export const ContactForm = () => {
   const {
     register,
@@ -27,18 +34,14 @@ export const ContactForm = () => {
 
   async function onSubmit(data: ContactFormData) {
     try {
-      console.log(data);
-
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await submitLead(data);
 
       toast.success("Mensagem enviada com sucesso!", {
         description: "Entraremos em contato em até 24 horas.",
       });
 
       reset();
-    } catch (error) {
-      console.log(error);
-
+    } catch {
       toast.error("Erro ao enviar mensagem.", {
         description: "Tente novamente em alguns minutos.",
       });
@@ -49,11 +52,11 @@ export const ContactForm = () => {
     <section className="bg-[#f7f5f2] py-24">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center">
-          <span className="uppercase tracking-[0.2em] text-[#8ea08f] text-xs">
+          <span className="uppercase tracking-[0.2em] text-[#5d7064] text-xs">
             Contato
           </span>
 
-          <h2 className="mt-4 text-5xl text-[#2f2f2f] font-[var(--font-cormorant)]">
+          <h2 className="mt-4 text-3xl md:text-5xl text-[#2f2f2f] font-[family-name:var(--font-cormorant)]">
             Agende uma avaliação inicial
           </h2>
 
@@ -206,7 +209,7 @@ export const ContactForm = () => {
               w-full
               h-12
               rounded-xl
-              bg-[#8ea08f]
+              bg-[#1F2330]
               text-white
               text-sm
               font-medium

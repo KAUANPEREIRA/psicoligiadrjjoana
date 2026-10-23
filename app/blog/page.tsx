@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "Blog ABA e Autismo | Artigos sobre Terapia em SP",
   description:
     "Artigos sobre Terapia ABA, autismo infantil e desenvolvimento comportamental. Dicas práticas para pais e educadores sobre o tratamento do TEA em crianças.",
+  // Remover o noindex quando houver artigos publicados
+  robots: { index: false, follow: true },
 };
 
 export default function Blog() {

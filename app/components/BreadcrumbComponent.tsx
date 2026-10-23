@@ -11,12 +11,15 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { menuItems } from "../data/menu";
+import { siteUrl } from "@/lib/site";
 
 type props = {
   title: string;
+  /** false = não renderiza o H1 (quando a página já tem o próprio H1) */
+  heading?: boolean;
 };
 
-export function BreadcrumbComponent({ title }: props) {
+export function BreadcrumbComponent({ title, heading = true }: props) {
   const pathname = usePathname();
 
   const breadcrumbs = [];
@@ -42,12 +45,27 @@ export function BreadcrumbComponent({ title }: props) {
     }
   });
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.label,
+      item: `${siteUrl}${item.href}`,
+    })),
+  };
+
   return (
     <section className="relative w-full overflow-hidden min-h-[280px] md:min-h-[380px] flex items-center p-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Background */}
       <img
         src="/imagens/bread.webp"
-        alt="Breadcrumb"
+        alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -85,7 +103,11 @@ export function BreadcrumbComponent({ title }: props) {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <h1 className="mt-4 text-4xl font-bold text-white">{title}</h1>
+        {heading && (
+          <h1 className="mt-4 text-3xl font-bold text-white md:text-4xl">
+            {title}
+          </h1>
+        )}
       </div>
     </section>
   );

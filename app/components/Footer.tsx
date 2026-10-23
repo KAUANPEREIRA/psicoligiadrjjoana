@@ -24,7 +24,6 @@ export const Footer = () => {
                 alt="DRA. JOANA Darc - Psicóloga Clínica"
                 width={155}
                 height={22}
-                priority
               />
             </Link>
             <p className="text-sm leading-relaxed text-gray-300">

@@ -22,7 +22,7 @@ export function Faq({
           <div className="mb-12 text-center">
             <h2
               id="faq-heading"
-              className="font-poppins text-[#1D1D1D] text-[48px] font-medium leading-[48px]"
+              className="font-[family-name:var(--font-cormorant)] text-[#2d3142] text-3xl md:text-5xl font-medium leading-tight"
             >
               {heading}
             </h2>
@@ -44,7 +44,7 @@ export function Faq({
                 value={item.id}
                 className="mb-4 rounded-2xl border px-4"
               >
-                <AccordionTrigger className="text-left text-lg font-medium text-[#1D1D1D] [&_svg]:text-[#00D62F]">
+                <AccordionTrigger className="text-left text-lg font-medium text-[#1D1D1D] [&_svg]:text-[#5d7064]">
                   {item.question}
                 </AccordionTrigger>
 

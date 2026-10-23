@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { whatsappUrl } from "@/lib/site";
 
 export default function Cta() {
   return (
@@ -33,7 +34,7 @@ export default function Cta() {
           </p>
 
           <Link
-            href="https://wa.me/5511999999999"
+            href={whatsappUrl()}
             aria-label="Agendar consulta psicológica pelo WhatsApp"
             className="inline-flex items-center rounded-xl bg-white px-8 py-4 font-semibold text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >

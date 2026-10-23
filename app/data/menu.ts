@@ -19,6 +19,18 @@ export const menuItems = [
         label: "Intervenção ABA",
         href: "/intervencao-aba",
       },
+      {
+        label: "Família e Escola",
+        href: "/familia-e-escola",
+      },
+      {
+        label: "Estimulação Cognitiva",
+        href: "/estimulacao-cognitiva",
+      },
+      {
+        label: "Reabilitação Cognitiva",
+        href: "/reabilitacao-cognitiva",
+      },
     ],
   },
   {

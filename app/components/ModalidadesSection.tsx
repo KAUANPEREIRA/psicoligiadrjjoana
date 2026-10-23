@@ -6,13 +6,13 @@ export default function ModalidadesSection() {
     <section aria-labelledby="modalidades-aba" className="bg-[#f5f5f2] py-20">
       <div className="container mx-auto px-4">
         <header className="mx-auto mb-14 max-w-2xl text-center">
-          <span className="mb-3 block text-xs font-medium uppercase tracking-[0.25em] text-[#8b8b7a]">
+          <span className="mb-3 block text-xs font-medium uppercase tracking-[0.25em] text-[#5f5f4f]">
             Modalidades de Atendimento
           </span>
 
           <h2
             id="modalidades-aba"
-            className="text-5xl font-light tracking-tight text-[#1f1f1f] font-[family-name:var(--font-cormorant)]"
+            className="text-3xl md:text-5xl font-light tracking-tight text-[#1f1f1f] font-[family-name:var(--font-cormorant)]"
           >
             Como Funciona a Terapia ABA
           </h2>

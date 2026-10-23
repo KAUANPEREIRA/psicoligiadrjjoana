@@ -3,5 +3,5 @@ export interface ServiceProps {
   icon: React.ElementType;
   title: string;
   description: string;
-  slug: string;
+  slug?: string; // sem slug = ainda não há página
 }

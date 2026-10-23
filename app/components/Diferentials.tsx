@@ -1,8 +1,15 @@
-import { LineChart, Target, Microscope, Users } from "lucide-react";
+import {
+  Heart,
+  FlaskConical,
+  Brain,
+  Users,
+  Puzzle,
+  GraduationCap,
+} from "lucide-react";
 
 const items = [
   {
-    icon: LineChart,
+    icon: Heart,
     id: 1,
     title: "Atendimento Humanizado e Individualizado",
     description:
@@ -10,7 +17,7 @@ const items = [
   },
 
   {
-    icon: LineChart,
+    icon: FlaskConical,
     id: 2,
     title: "Intervenção Baseada em Evidências Científicas",
     description:
@@ -18,7 +25,7 @@ const items = [
   },
 
   {
-    icon: LineChart,
+    icon: Brain,
     id: 3,
     title: "Foco no Desenvolvimento Infantil",
     description:
@@ -26,7 +33,7 @@ const items = [
   },
 
   {
-    icon: LineChart,
+    icon: Users,
     id: 4,
     title: "Trabalho Integrado com Família e Escola",
     description:
@@ -34,7 +41,7 @@ const items = [
   },
 
   {
-    icon: LineChart,
+    icon: Puzzle,
     id: 5,
     title: "Estratégias Lúdicas no Processo Terapêutico",
     description:
@@ -42,11 +49,11 @@ const items = [
   },
 
   {
-    icon: LineChart,
+    icon: GraduationCap,
     id: 6,
     title: "Formação em Neuropsicologia (Em andamento)",
     description:
-      "A profissional está em especialização em Neuropsicologia com Reabilitação Cognitiva, ampliando sua atuação no desenvolvimento infantil.",
+      "Especialização em Neuropsicologia com Reabilitação Cognitiva em andamento, ampliando minha atuação no desenvolvimento infantil.",
   },
 ];
 
@@ -58,15 +65,15 @@ export const Diferentials = () => {
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-14">
-          <span className="text-xs tracking-[0.25em] uppercase text-[#8f9b8f]">
+          <span className="text-xs tracking-[0.25em] uppercase text-[#5d7064]">
             Diferenciais
           </span>
 
           <h2
-            className="mt-4 text-5xl text-[#2e2e2e] font-[family-name:var(--font-cormorant)]"
+            className="mt-4 text-3xl md:text-5xl text-[#2e2e2e] font-[family-name:var(--font-cormorant)]"
             id="diferenciais-title"
           >
-            Por que escolher a Terapia ABA com Joana DArc?
+            Por que escolher a Terapia ABA com Joana D&apos;Arc?
           </h2>
         </div>
 

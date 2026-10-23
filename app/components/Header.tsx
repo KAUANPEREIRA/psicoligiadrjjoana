@@ -27,7 +27,7 @@ export function Header() {
             asChild
             className="bg-[#2D3142] hover:bg-[#1f2330] inline-flex items-center justify-center rounded-full px-8 py-5 text-base font-semibold text-white shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.02] ml-4"
           >
-            <Link href="/sobre">Agendar consulta</Link>
+            <Link href="/contato">Agendar consulta</Link>
           </Button>
         </div>
 
@@ -99,7 +99,7 @@ export function Header() {
                     size="lg"
                     className="w-full bg-[#2D3142] hover:bg-[#1f2330] text-white rounded-full font-semibold transition-all hover:shadow-xl"
                   >
-                    <Link href="/sobre">Agendar consulta</Link>
+                    <Link href="/contato">Agendar consulta</Link>
                   </Button>
                 </div>
               </div>

@@ -10,40 +10,22 @@ export const CardTestimonial = ({
   role,
 }: CardTestimonialProps) => {
   return (
-    <article
-      className="
-        bg-[#fefefe]
-        flex-1
-        border
-        border-neutral-200
-        rounded-[20px]
-        p-6
-        max-w-[320px]
-        transition-all
-        duration-300
-        hover:-translate-y-1
-        hover:shadow-lg
-
-      "
-    >
-      <div className="text-neutral-300 text-4xl leading-none">"</div>
-
-      <p
-        className="
-          mt-2
-          text-[14px]
-          leading-relaxed
-          text-neutral-500
-        "
-      >
-        {description}
-      </p>
-
-      <div className="mt-8">
-        <h3 className="text-[15px] font-medium text-[#2f2f2f] mb-3">{name}</h3>
-        <hr className="py-1"></hr>
-        <span className="text-[13px] text-neutral-400">{role}</span>
+    <figure className="flex h-full flex-col rounded-[20px] border border-neutral-200 bg-[#fefefe] p-6">
+      <div aria-hidden="true" className="text-4xl leading-none text-neutral-300">
+        &ldquo;
       </div>
-    </article>
+
+      <blockquote className="mt-2 text-sm leading-relaxed text-neutral-600">
+        <p>{description}</p>
+      </blockquote>
+
+      <figcaption className="mt-auto pt-8">
+        <span className="mb-3 block text-[15px] font-medium text-[#2f2f2f]">
+          {name}
+        </span>
+        <hr className="mb-2 border-neutral-200" />
+        <span className="text-[13px] text-neutral-500">{role}</span>
+      </figcaption>
+    </figure>
   );
 };

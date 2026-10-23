@@ -8,19 +8,19 @@ export const About = () => {
     <section className="bg-[#faf7f2]">
       <div className="container mx-auto px-4 py-16 ">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12">
-          <div className="relative rounded-lg overflow-hidden w-full h-[600px]">
+          <div className="relative rounded-lg overflow-hidden w-full h-[600px] bg-[#faf7f2] shadow-lg">
             <Image
-              src="/imagens/joana.webp"
+              src="/imagens/dr-joana.webp"
               alt="Psicóloga especialista em Terapia ABA realizando atendimento clínico"
               width={600}
               height={800}
-              className="object-cover object-top w-full h-full"
+              className="object-cover object-top w-full h-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
 
           <div>
-            <h2 className="text-[2rem] leading-[48px] font-medium text-[#2d3142] font-cormorant mb-4">
-              <span className="mb-2 block font-sans text-sm font-medium uppercase tracking-[0.12em] leading-[1.4] text-[#8fa998]">
+            <h2 className="text-3xl md:text-4xl leading-tight font-medium text-[#2d3142] font-cormorant mb-4">
+              <span className="mb-2 block font-sans text-sm font-medium uppercase tracking-[0.12em] leading-[1.4] text-[#5d7064]">
                 Sobre a Especialista
               </span>{" "}
               Especialista em Terapia ABA e Autismo
@@ -49,8 +49,8 @@ export const About = () => {
               de todo o Brasil, sempre com foco em evolução gradual e funcional.
             </p>
 
-            <Button asChild className="btn btn--hero">
-              <Link href="/sobre">Saiba mais</Link>
+            <Button asChild className="bg-[#2D3142] hover:bg-[#1f2330] rounded-full px-8 py-6">
+              <Link href="/sobre">Conheça a Dra. Joana</Link>
             </Button>
           </div>
         </div>
